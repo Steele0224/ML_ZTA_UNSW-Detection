@@ -25,8 +25,6 @@ Original file is located at
 - `confusion_matrix.png` - Confusion matrix visualization
 - `roc_curves.png` - ROC curves for all models
 
----
-## Configuration
 """
 
 # ============================================================================
@@ -45,8 +43,8 @@ print(f"Configuration: {DATASET_TYPE}")
 if DATASET_TYPE != 'synthetic':
     print(f"Dataset file: {DATASET_PATH}")
 
-"""---
-## Import Libraries
+"""
+Import Libraries
 """
 
 import numpy as np
@@ -61,8 +59,8 @@ import matplotlib.pyplot as plt
 
 print("✓ Libraries imported")
 
-"""---
-## Data Preprocessing Class
+"""
+Data Preprocessing Class
 """
 
 class DataPreprocessor:
@@ -141,8 +139,8 @@ class DataPreprocessor:
 
 print("✓ DataPreprocessor loaded")
 
-"""---
-## Model Classes
+"""
+Model Classes
 """
 
 class RandomForestModel:
@@ -240,8 +238,8 @@ class HybridModel:
 
 print("✓ Model classes loaded")
 
-"""---
-## Load Data
+"""
+Load Data
 """
 
 print("="*70)
@@ -294,15 +292,15 @@ else:
 
 print("\n" + "="*70)
 
-"""---
-## Preprocess Data
+"""
+Preprocess Data
 """
 
 X_train, X_test, y_train, y_test = prep.preprocess(df, n_features=10)
 print("\n✓ Data ready for training")
 
-"""---
-## Train Models
+"""
+Train Models
 """
 
 print("\n" + "="*70)
@@ -328,8 +326,8 @@ print("   ✓ Complete")
 
 print("\n" + "="*70)
 
-"""---
-## Evaluate and Compare
+"""
+Evaluate and Compare
 """
 
 rf_metrics = rf.evaluate(X_test, y_test)
@@ -353,8 +351,8 @@ print("="*70)
 results.to_csv('performance_results.csv', index=False)
 print("\n✓ Saved to performance_results.csv")
 
-"""---
-## Generate Visualisations
+"""
+Generate Visualisations
 """
 
 # Confusion Matrix
@@ -396,8 +394,8 @@ plt.savefig('roc_curves.png', dpi=150, bbox_inches='tight')
 plt.show()
 print("✓ Saved roc_curves.png")
 
-"""---
-## Sample ZTA Decisions
+"""
+Sample ZTA Decisions
 """
 
 print("\n" + "="*70)

@@ -421,20 +421,3 @@ for i, (score, actual) in enumerate(zip(scores, y_test[:10])):
     print(f"\n{i+1}. Score: {score:.3f} → {decision} ({trust} Trust) | Actual: {actual_label} {correct}")
 
 print("\n" + "="*70)
-
-"""---
-## ✅ COMPLETE!
-
-**Download from Files tab (📁):**
-1. `performance_results.csv`
-2. `confusion_matrix.png`
-3. `roc_curves.png`
-
-**Citations:**
-
-UNSW-NB15:
-> Moustafa, N., & Slay, J. (2015). UNSW-NB15: A comprehensive data set for network intrusion detection systems. *Military Communications and Information Systems Conference (MilCIS)*, 1-6.
-
-CICIDS2017:
-> Sharafaldin, I., Lashkari, A. H., & Ghorbani, A. A. (2018). Toward generating a new intrusion detection dataset and intrusion traffic characterization. *4th International Conference on Information Systems Security and Privacy (ICISSP)*, 108-116.
-"""
